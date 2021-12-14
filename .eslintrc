@@ -1,0 +1,11 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": "airbnb",
+  "globals": {
+    "document": "writable"
+  },
+  "parserOptions":{
+    "ecmaVersion": 8,
+    "requireConfigFile": false
+  }
+}
