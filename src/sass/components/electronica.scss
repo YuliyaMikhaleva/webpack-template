@@ -1,0 +1,70 @@
+.electronica{
+  background-image: url("../images/bg-electronica.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 810px;
+  &__header{
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__title{
+    width: 625px;
+  }
+  &__button{
+    width: 205px;
+  }
+  &__wrp{
+    display: flex;
+    position: relative;
+    height: 420px;
+  }
+  &__articles{
+    display: flex;
+  }
+  &__article{
+    padding: 34px 27px 18px 32px;
+    box-sizing: border-box;
+    width: 373px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(144.73deg, #AF0015 0%, #FF6C5D 52.08%, rgba(255, 217, 119, 0.63) 100%);
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+
+    &:nth-child(2){
+      padding: 23px 13px 19px 17px;
+      box-sizing: border-box;
+      width: 266px;
+      height: 260px;
+      background: linear-gradient(144.73deg, #0044C0 0%, #025BFF 49.32%, #25E5FF 100%);
+      top: 13%;
+      left: 78%;
+      z-index: 98;
+    }
+    &:nth-child(3){
+      padding: 21px 1px 15px 21px;
+      box-sizing: border-box;
+      width: 231px;
+      height: 220px;
+      background: linear-gradient(144.73deg, #670098 0%, rgba(255, 93, 219, 0.84) 60.42%, rgba(255, 220, 220, 0.59) 100%);
+      top: 16%;
+      left: 99%;
+      z-index: 1;
+    }
+  }
+  &__nav{
+    margin: auto auto 0;
+    width: 88px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-end;
+    align-items: center;
+  }
+}

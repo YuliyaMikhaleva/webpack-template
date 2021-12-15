@@ -22,9 +22,19 @@
   }
 }
 
+.main{
+  &__electronica{
+    padding: 180px 21px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 
 .container{
   margin: 0 11.7% ;
+  height: 100%;
 }
 
 @media (max-width: 1280px) {
@@ -32,7 +42,6 @@
     margin: 0 4.3%;
   }
 }
-
 
 // end common styles
 
