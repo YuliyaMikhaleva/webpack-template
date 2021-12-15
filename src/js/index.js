@@ -1,6 +1,6 @@
 // polyfills
 import '@babel/polyfill';
 // styles
-import '../sass/style.sass';
+import '../sass/style.scss';
 // imports
 import './_imports';

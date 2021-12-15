@@ -1,0 +1,13 @@
+.menu{
+  &__link{
+    color: $blueColor;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 0 16px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}

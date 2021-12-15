@@ -1,0 +1,121 @@
+.footer{
+  background-color:#08234E;
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 72px;
+  }
+  &__data{
+    display: grid;
+    width: 345px;
+    grid-row-gap: 18px;
+    grid-auto-rows: max-content;
+  }
+  &__logo{
+    margin-bottom: 40px;
+  }
+
+  &__tel{
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 53px;
+    color: $whiteColor;
+    opacity: 0.6;
+  }
+  &__styletel{
+    color: $whiteColor;
+  }
+  &__address{
+    font-size: 16px;
+    line-height: 140%;
+    color: $whiteColor;
+    opacity: 0.6;
+  }
+  &__nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    grid-row-gap: 50px;
+    grid-column-gap: 95px;
+  }
+  &__link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color:$whiteColor;
+    text-decoration: none;
+  }
+  &__links{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-column-gap: 25px;
+    grid-template-columns: 1.2fr 0.8fr 1fr 1.1fr;
+    width: 257px;
+  }
+  &__youtube{
+    width: 52px;
+  }
+  &__facebook{
+    width: 38px;
+  }
+  &__instagram{
+    width: 45px;
+  }
+  &__vkontakte{
+    width: 43px;
+  }
+  &__copyright{
+    padding: 35px 11.7% 90px 11.7%;
+    box-sizing: border-box;
+    border-top: 1px solid #9CA7B8;
+    color: $whiteColor;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__firm{
+    opacity: 0.6;
+    margin: auto 0;
+  }
+  &__author{
+    display: flex;
+  }
+  &__text{
+    display: block;
+    opacity: 0.6;
+    margin: auto 30px auto 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__nav{
+    grid-column-gap: 50px;
+  }
+  .footer__logo{
+    width: 255px;
+  }
+  .footer__tel{
+    font-size: 30px;
+  }
+  .footer__data{
+    width: 255px;
+  }
+  .footer__links{
+    width: 203px;
+    grid-column-gap: 21px;
+  }
+  .footer__youtube{
+  width: 41px;
+  }
+  .footer__facebook{
+    width: 30px;
+  }
+  .footer__instagram{
+    width: 34px;
+  }
+  .footer__vkontakte{
+    width: 34px;
+  }
+  .footer__copyright{
+    padding: 35px 4.3% 90px 4.3%;
+  }
+}

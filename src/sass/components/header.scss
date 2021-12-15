@@ -1,0 +1,105 @@
+.header{
+  &__block{
+    height: 120px;
+  }
+  &__contacts {
+    padding: 19px 0 15px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+  }
+  &__about {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    min-width: 25%;
+  }
+  &__connect {
+       display: grid;
+       grid-template-columns: repeat(5, auto);
+       grid-auto-columns: minmax(10px, 20px);
+       min-width: 50%;
+     }
+  &__line{
+      width: 43px;
+      height: 80%;
+      display: inline-block;
+      border-top: 1px solid #025BFF;
+      margin: 6px 20px 0 24px;
+  }
+  &__words{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 12px;
+      text-transform: uppercase;
+      margin-top: 2px;
+  }
+  &__mail{
+    color: $blueColor;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16.8px;
+    display: block;
+    margin: auto;
+    padding: 0 2px;
+  }
+  &__tel{
+    color: $blueColor;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 0 2px;
+  }
+  &__phoneicon{
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0 2px;
+  }
+  &__btn{
+    background-color: #025BFF;
+    color: $whiteColor;
+    border-radius: 51px;
+    border: 0;
+    padding: 13px 27px 14px 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 8px;
+    cursor: pointer;
+    margin: 0 2px;
+  }
+  &__basket{
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+  }
+  &__counter{
+    background-color: #FF6C5D;
+    color: $whiteColor;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 17px;
+    position: absolute;
+    padding: 0 7px 1px 8px;
+    top: -5px;
+    right: -16px;
+  }
+  &__navigation{
+    margin-top: 6px;
+    padding: 0 11.7%;
+    //padding: 0 225px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__navigation{
+    padding: 0 4.3%;
+  }
+}

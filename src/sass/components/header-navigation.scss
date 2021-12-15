@@ -1,0 +1,32 @@
+.header-navigation{
+  border-top: 1px solid #cfcfcf;
+  box-sizing: border-box;
+&__menu{
+   display: flex;
+   width: 85%;
+   justify-content: space-between;
+ }
+&__buttons{
+   display: flex;
+ }
+
+&__search{
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+   margin-right: 41px;
+ }
+&__lang{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16.8px;
+   text-transform: uppercase;
+   background: none;
+   border: none;
+   color: #025BFF;
+   display: block;
+   cursor: pointer;
+   padding: 0;
+ }
+}

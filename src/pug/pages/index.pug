@@ -1,21 +1,99 @@
-doctype html
-html(lang="en")
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-head
-	meta(charset="UTF-8")
-	meta(name="viewport" content="width=device-width, initial-scale=1.0")
-	title Document
+</head>
+<body class="body">
+  <header class="header  body__header">
+    <div class="header__contacts container">
+        <div class="header__about">
+          <a href="/">
+            <img class="logo" src="../../images/logo.svg" alt="logo">
+          </a>
+          <div class="header__line"></div>
+          <span class="header__words">опыт. репутация. надежность</span>
+        </div>
+        <div class="header__connect">
+          <span class="header__mail">mail@vektorpm.ru</span>
+          <span class="header__tel">8 800 100 24 89</span>
+          <button class="header__phoneicon">
+            <img src="../../images/tel.svg" alt="telephone">
+          </button>
+          <button class="header__btn">Кабинет дилера</button>
+          <div class="header__basket">
+            <span class="header__counter" class="">0</span>
+            <img src="../../images/basket.svg" alt="basket">
+          </div>
+        </div>
+    </div>
+    <nav class="header-navigation header__navigation">
+      <nav class="menu header-navigation__menu">
+        <a class="menu__link" href="#">продукция</a>
+        <a class="menu__link" href="#">о заводе</a>
+        <a class="menu__link" href="#">готовые решения</a>
+        <a class="menu__link" href="#">пресс-центр</a>
+        <a class="menu__link" href="#">медиатека</a>
+        <a class="menu__link" href="#">акции</a>
+        <a class="menu__link" href="#">услуги</a>
+        <a class="menu__link" href="#">представители</a>
+        <a class="menu__link" href="#">контакты</a>
+      </nav>
+      <nav class="header-navigation__buttons">
+        <button class="header-navigation__search">
+          <img src="../../images/search.svg" alt="search">
+        </button>
+        <button class="header-navigation__lang">eng</button>
+      </nav>
+    </nav>
+  </header>
 
-body
-	include ../components/header.pug
+  <main class="main body__main"></main>
 
-	.swiper-container
-		.swiper-wrapper
-			.swiper-slide 
-				img(src="./images/jaba.png")
-			.swiper-slide 
-				img(src="./images/jaba.png")
-			.swiper-slide 
-				img(src="./images/jaba.png") 
-			.swiper-slide 
-				img(src="./images/jaba.png") 
+  <footer class="footer body__footer">
+    <div class="footer__info container">
+      <div class="footer__data">
+        <img class="logo footer__logo" src="../../images/logo-white.svg" alt="logo">
+        <span class="footer__tel">8 (800) <span class="footer__styletel">100 24 89</span></span>
+        <span class="footer__address">614038, Россия, Пермский край, г. Пермь, улица Академика Веденеева, 80а</span>
+      </div>
+      <nav class="footer__nav">
+        <a class="footer__link" href="#">О заводе</a>
+        <a class="footer__link" href="#">Продукция</a>
+        <a class="footer__link" href="#">Акции</a>
+        <a class="footer__link" href="#">Готовые решения</a>
+        <a class="footer__link" href="#">Пресс-центр</a>
+        <a class="footer__link" href="#">Медиатека</a>
+        <a class="footer__link" href="#">Услуги</a>
+        <a class="footer__link" href="#">Представители</a>
+        <a class="footer__link" href="#">Контакты</a>
+      </nav>
+      <div class="footer__links">
+        <a href="#">
+          <img class="footer__youtube" src="../../images/youtube.svg" alt="youtube">
+        </a>
+        <a href="#">
+          <img class="footer__facebook" src="../../images/fb.svg" alt="facebook">
+        </a>
+        <a href="#">
+          <img class="footer__instagram" src="../../images/instagram.svg" alt="instagram">
+        </a>
+        <a href="#">
+          <img class="footer__vkontakte" src="../../images/vkontakte.svg" alt="vkontakte">
+        </a>
+      </div>
+    </div>
+    <div class="footer__copyright">
+        <span class="footer__firm">&#169; Производственное объединение «Вектор-ПМ» 2002 – 2019</span>
+        <div class="footer__author">
+          <span class="footer__text">Создание сайта</span>
+          <img src="../../images/amado.svg" alt="Amado">
+        </div>
+    </div>
+
+  </footer>
+</body>
+</html>

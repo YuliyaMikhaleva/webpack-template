@@ -1,0 +1,39 @@
+@import './_libs';
+@import './_vars';
+@import './_mixins.scss';
+@import './variables.scss';
+@import 'fonts';
+
+// common styles
+
+.body{
+  min-width: 320px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  &__main{
+    min-height: 200px;
+  }
+  &__footer{
+    padding-top: 511px;
+  }
+}
+
+
+.container{
+  margin: 0 11.7% ;
+}
+
+@media (max-width: 1280px) {
+  .container{
+    margin: 0 4.3%;
+  }
+}
+
+
+// end common styles
+
+@import './_imports';
