@@ -1,0 +1,41 @@
+.hover-article{
+  background-color: $blueBG;
+  opacity: 85%;
+  &__title{
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.02em ;
+    margin: 0;
+  }
+  &__text{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: white;
+    justify-items: flex-end;
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
+  &__link{
+    text-decoration: none;
+    color: #F1F5F9;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      width: 22px;
+      height: 18px;
+      position: absolute;
+      top: 0;
+      left: 104px;
+      background-image: url("../images/arrow_white.png");
+    }
+  }
+}

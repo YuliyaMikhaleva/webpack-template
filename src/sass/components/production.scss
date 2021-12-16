@@ -1,0 +1,49 @@
+.production{
+  &__title{
+    color: $blueColor;
+    font-weight: 500;
+    line-height: 54.28px;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  &__text{
+    display: block;
+    width: 50%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 23px 0 30px;
+  }
+  &__wrp{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  &__article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__button{
+    background-color: $blueBG;
+    display: block;
+    margin: 76px auto 0;
+    width: 300px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    &:hover{
+      background-color: transparent;
+      color: $blueBG;
+      border: 1px solid $blueBG;
+      box-sizing: border-box;
+    }
+    &:active{
+      background-color: $blueBG;
+      color: white;
+      border: 1px solid transparent;
+      box-sizing: border-box;
+    }
+  }
+}

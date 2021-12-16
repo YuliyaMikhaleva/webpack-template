@@ -1,0 +1,38 @@
+.product-article{
+  border: 1px solid #E5EAEF;
+  cursor: pointer;
+  &__hover{
+    position: absolute;
+    width: 75%;
+    height: 81%;
+    padding: 48px 56px 29px 30px ;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &:hover{
+    .hover-article{
+      display: flex;
+    }
+  }
+  &__img{
+    width: 100%;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    display: block;
+    margin: 43px 17px 27px 36px;
+    color: $blueColor;
+  }
+  &__link{
+    display: block;
+    margin: 0 0 31px 36px;
+  }
+  &__linkWrp{
+    justify-items: flex-end;
+    margin-top: auto;
+  }
+}
