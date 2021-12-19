@@ -28,11 +28,13 @@
   }
   &__button{
     background-color: $blueBG;
+    color: $whiteColor;
     display: block;
     margin: 76px auto 0;
     width: 300px;
     border: 1px solid transparent;
     box-sizing: border-box;
+    padding: 19px 0;
     &:hover{
       background-color: transparent;
       color: $blueBG;
@@ -41,7 +43,7 @@
     }
     &:active{
       background-color: $blueBG;
-      color: white;
+      color: $whiteColor;
       border: 1px solid transparent;
       box-sizing: border-box;
     }

@@ -3,8 +3,8 @@
   box-sizing: border-box;
 &__menu{
    display: flex;
-   width: 85%;
    justify-content: space-between;
+  width: 90%;
  }
 &__buttons{
    display: flex;
@@ -15,7 +15,23 @@
    border: none;
    cursor: pointer;
    padding: 0;
-   margin-right: 41px;
+   margin-right: 10px;
+   border-bottom: 5px solid transparent;
+   box-sizing: border-box;
+   &:hover{
+     border-bottom: 5px solid $blueBG;
+     box-sizing: border-box;
+   }
+  &:hover .header__loop{
+    stroke: $blueBG;
+  }
+  &:active{
+    border-bottom: 5px solid transparent;
+    box-sizing: border-box;
+  }
+  &:active .header__loop{
+    stroke: $blueColor;
+  }
  }
 &__lang{
    font-weight: 400;
@@ -24,9 +40,15 @@
    text-transform: uppercase;
    background: none;
    border: none;
-   color: #025BFF;
+   color: $blueBG;
    display: block;
    cursor: pointer;
    padding: 0;
+   border-bottom: 5px solid transparent;
+   box-sizing: border-box;
+   &:hover{
+     border-bottom: 5px solid $blueBG;
+     box-sizing: border-box;
+   }
  }
 }

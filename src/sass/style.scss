@@ -6,8 +6,10 @@
 
 // common styles
 
+a{
+  text-decoration: none;
+}
 .body{
-  min-width: 320px;
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: Montserrat, serif;
@@ -46,6 +48,21 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .container{
+    margin: 0 25px;
+  }
+}
+@media (max-width: 780px) {
+  .container{
+    margin: 0 0 0 22px;
+  }
+}
+@media (max-width: 779px) {
+  .container{
+    margin: 0 0 0 16px;
+  }
+}
 // end common styles
 
 @import './_imports';
