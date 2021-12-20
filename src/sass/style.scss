@@ -63,6 +63,11 @@ a{
     margin: 0 0 0 16px;
   }
 }
+@media (max-width: 710px) {
+  .container{
+    margin: 0;
+  }
+}
 // end common styles
 
 @import './_imports';
