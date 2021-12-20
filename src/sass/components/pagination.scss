@@ -10,7 +10,14 @@
       width: 16px;
       height: 16px;
       border: 1px solid $whiteColor;
+      box-sizing: border-box;
       background-color: transparent;
+    }
+    &:hover{
+      transform: scale(2.5);
+    }
+    &:active{
+      transform: scale(1);
     }
   }
 }

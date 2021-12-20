@@ -4,7 +4,7 @@
   }
   &:nth-child(2) > h1{
     margin: 46px 0 52px 0;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
   }
   &:nth-child(3) > img{
@@ -35,5 +35,45 @@
     justify-self: flex-end;
     margin-top: auto;
   }
+}
 
+@media (max-width: 1024px) {
+  .article{
+    &__title{
+      font-size: 20px;
+    }
+    &:nth-child(2) > h1{
+      font-size: 16px;
+      margin: 21px 0 52px 0;
+    }
+    &:nth-child(3) > h1{
+      font-size: 16px;
+      margin: 7px 0 20px 0;
+    }
+    &__text{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .article{
+    &__title{
+      font-size: 17px;
+    }
+    &:nth-child(2) > h1,a{
+      display: none;
+    }
+    &:nth-child(3) > h1,a{
+      display: none;
+    }
+    &:nth-child(2) {
+      left: 18%;
+      top: 7%;
+    }
+    &:nth-child(3) {
+      top: 14%;
+      left: 33%;
+    }
+  }
 }

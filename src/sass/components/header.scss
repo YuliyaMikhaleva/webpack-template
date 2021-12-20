@@ -246,7 +246,6 @@
       display: flex;
     }
     &__connectWrp{
-
       align-content: center;
     }
     &__connect{
@@ -283,5 +282,12 @@
     &__logo{
       width: 166px;
     }
+  }
+}
+
+@media (max-width: 710px) {
+  .header__contacts{
+    padding: 15px 0 15px 16px;
+
   }
 }

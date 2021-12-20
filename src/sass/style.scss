@@ -10,6 +10,7 @@ a{
   text-decoration: none;
 }
 .body{
+  min-width: 320px;
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: Montserrat, serif;
@@ -26,7 +27,7 @@ a{
 
 .main{
   &__electronica{
-    padding: 180px 21px 40px;
+    padding: 180px 0 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -57,6 +58,9 @@ a{
   .container{
     margin: 0 0 0 22px;
   }
+  .main__electronica{
+    padding: 61px 0 19px;
+  }
 }
 @media (max-width: 779px) {
   .container{
@@ -66,6 +70,9 @@ a{
 @media (max-width: 710px) {
   .container{
     margin: 0;
+  }
+  .main__electronica{
+    padding: 51px 0 0;
   }
 }
 // end common styles
