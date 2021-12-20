@@ -10,7 +10,6 @@ a{
   text-decoration: none;
 }
 .body{
-  min-width: 320px;
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: Montserrat, serif;
@@ -47,6 +46,9 @@ a{
   .container{
     margin: 0 4.3%;
   }
+  .main__production{
+    padding: 70px 0 55px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -64,16 +66,21 @@ a{
 }
 @media (max-width: 779px) {
   .container{
-    margin: 0 0 0 16px;
+    margin: 0 16px 0 16px;
   }
 }
 @media (max-width: 710px) {
-  .container{
-    margin: 0;
-  }
-  .main__electronica{
+  .main__electronica {
     padding: 51px 0 0;
   }
+}
+
+
+@media (max-width: 320px) {
+  .main__production{
+    padding: 49px 0 71px;
+  }
+
 }
 // end common styles
 

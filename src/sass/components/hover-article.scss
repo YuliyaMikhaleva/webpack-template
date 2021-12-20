@@ -2,7 +2,7 @@
   background-color: $blueBG;
   opacity: 85%;
   &__title{
-    color: white;
+    color: $whiteColor;
     font-weight: 700;
     font-size: 16px;
     line-height: 22.4px;
@@ -15,7 +15,7 @@
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0.02em;
-    color: white;
+    color: $whiteColor;
     justify-items: flex-end;
     margin-top: auto;
     margin-bottom: 24px;
@@ -27,6 +27,8 @@
     font-size: 16px;
     line-height: 140%;
     position: relative;
+    justify-self: flex-end;
+    margin-top: auto;
     &:after{
       content: "";
       display: block;
@@ -37,5 +39,56 @@
       left: 104px;
       background-image: url("../images/arrow_white.png");
     }
+  }
+}
+
+@media (max-width: 1450px) {
+  .hover-article__text{
+    font-size: 13px;
+  }
+  .hover-article__title{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hover-article__text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hover-article__title{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .hover-article__text{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hover-article__text{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .hover-article__text{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hover-article__text{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hover-article__text{
+    margin-top: 17px;
+    margin-bottom: 17px;
   }
 }
