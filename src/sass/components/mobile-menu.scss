@@ -107,17 +107,17 @@
   }
 }
 
-.mobile-menu__searchWrp{
+.mobile-menu__search-wrp{
   margin: auto 0;
-  &:hover .mobile-menu__loopSvg{
+  &:hover .mobile-menu__loop-svg{
     stroke: $blueColor;
     transition: stroke 0.25s;
   }
-  &:active .mobile-menu__loopSvg{
+  &:active .mobile-menu__loop-svg{
     stroke: $whiteColor;
   }
 }
-.mobile-menu__loopSvg{
+.mobile-menu__loop-svg{
   transition: stroke 0.25s;
 }
 
@@ -151,7 +151,7 @@
   color:$darkBlueColor;
   transition: color 0.25s;
 }
-.mobile-menu__item:hover .mobile-menu__itemSvg{
+.mobile-menu__item:hover .mobile-menu__item-svg{
   stroke: $darkBlueColor;
 }
 .mobile_menu__kab{

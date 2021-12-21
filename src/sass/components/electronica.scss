@@ -87,7 +87,7 @@
     justify-items: flex-end;
     align-items: center;
   }
-  &__secondTitle{
+  &__second-title{
     display: none;
   }
   &__btns{
@@ -96,7 +96,7 @@
     top: 88%;
     right: 11%;
   }
-  &__btnArrow{
+  &__btn-arrow{
     width: 99px;
     height: 95px;
     cursor: pointer;
@@ -112,22 +112,22 @@
       background-color: $blueBG;
       transition: background-color 0.25s;
     }
-    &:hover .electronica__arrowPath{
+    &:hover .electronica__arrow-path{
       transition: fill 0.25s;
       fill: $whiteColor;
     }
     &:active{
       background-color: #002871;
     }
-    &:active .electronica__arrowPath{
+    &:active .electronica__arrow-path{
       fill: $blueBG;
     }
 
   }
-  &__arrowPath{
+  &__arrow-path{
     transition: fill 0.25s;
   }
-  &__arrowSvg{
+  &__arrow-svg{
     display: block;
     margin: auto;
   }
@@ -149,7 +149,7 @@
       width: 190px;
       left: 92%;
     }
-    &__btnArrow{
+    &__btn-arrow{
       width: 69px;
       height: 67px;
     }
@@ -206,7 +206,7 @@
     &__article:nth-child(3){
       left: 80%;
     }
-    &__btnArrow{
+    &__btn-arrow{
       width: 53px;
       height: 52px;
     }
@@ -223,7 +223,7 @@
     &__header{
       display: none;
     }
-    &__secondTitle{
+    &__second-title{
       display: block;
       margin: 0 19px 114px 19px;
 
@@ -251,7 +251,7 @@
     &__wrp {
       height: 244px;
     }
-    &__btnArrow{
+    &__btn-arrow{
       width: 69px;
       height: 67px;
     }

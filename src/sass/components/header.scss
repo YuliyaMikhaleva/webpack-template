@@ -24,7 +24,7 @@
        margin-left: 15px;
      }
 
-  &__connectWrp{
+  &__connect-wrp{
     display: flex;
     flex-wrap: wrap;
   }
@@ -128,15 +128,15 @@
     position: relative;
     margin: auto;
     cursor: pointer;
-    :hover .header__basketIcon{
+    :hover .header__basket-icon{
       stroke: $redColor;
       transition: stroke 0.25s;
     }
-    :active .header__basketIcon{
+    :active .header__basket-icon{
       stroke: $blueBG;
     }
   }
-  &__basketIcon{
+  &__basket-icon{
     transition: stroke 0.25s;
   }
   &__counter{
@@ -185,7 +185,7 @@
     &__connect{
       grid-column-gap: 30px;
     }
-    &__connectWrp{
+    &__connect-wrp{
       margin: 0 10%;
       max-width: 190px;
     }
@@ -253,7 +253,7 @@
     &__mobilemenu{
       display: flex;
     }
-    &__connectWrp{
+    &__connect-wrp{
       align-content: center;
     }
     &__connect{
@@ -272,7 +272,7 @@
     &__words{
       display: none;
     }
-    &__connectWrp{
+    &__connect-wrp{
       display: none;
     }
     &__basket{
