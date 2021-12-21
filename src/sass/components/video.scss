@@ -3,6 +3,21 @@
   background-repeat: no-repeat;
   background-position: center;
   animation-delay: 1s;
+  cursor: pointer;
+  transition: background-size 0.3s;
+  position: relative;
+  &:hover{
+    background-size: 155%;
+    transition: background-size 0.3s;
+  }
+  &:hover .video__circle{
+    transition: border 0.3s;
+    border: 1px solid white;
+  }
+  &:hover .video__triangle-path{
+    stroke-opacity:1;
+    transition: stroke-opacity 0.3s;
+  }
   &__link{
     color: $whiteColor;
     opacity: 0.5;
@@ -20,6 +35,12 @@
     }
     &:active{
       opacity: 0.5;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+    &:active{
+      text-decoration: none;
     }
   }
   &__title{
@@ -42,17 +63,54 @@
   }
   &__line{
     width: 200px;
-    height: 70px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    margin: auto 64px 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto 0 auto 64px;
   }
-
+  &__circle{
+    width: 231px;
+    height: 231px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    box-sizing: border-box;
+    transition: border 0.3s;
+    background: none;
+    cursor: pointer;
+    &:hover .video__triangle{
+      fill: white;
+    }
+    &:active .video__triangle{
+      fill: none;
+    }
+  }
+  &__triangle{
+    margin: auto;
+    display: block;
+  }
+  &__triangle-path{
+    transition: stroke-opacity 0.3s;
+  }
+  &__play{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    display: none;
+  }
+  &__hide{
+    display: none;
+  }
+  &__show{
+    display: block;
+  }
 }
 
 @media (max-width: 1280px) {
   .video{
     &__line{
-      margin: auto 32px 0;
+      margin: auto 0 auto 32px;
       width: 170px;
     }
     &__title{
@@ -64,8 +122,22 @@
       width: 77.38px;
       height: 98.81px;
     }
+    &__circle{
+      width: 144px;
+      height: 144px;
+    }
+    &:hover{
+      background-size: 200%;
+    }
   }
 }
+
+@media (max-width: 1024px) {
+  .video:hover{
+    background-size: 260%;
+  }
+}
+
 @media (max-width: 780px) {
   .video{
     background-image: url("../images/bg-video2.jpg");
@@ -76,26 +148,37 @@
     }
     &__line{
       width: 71px;
-      height: 44px;
-      margin: auto 24px 0;
+      margin: auto 0 auto 24px;
     }
     &__triangle{
       width: 49px;
       height: 63px;
-      margin: auto 0;
+    }
+    &__circle{
+      width: 99px;
+      height: 99px;
+    }
+    &:hover{
+      background-size: 245%;
     }
   }
 }
 
-@media (max-width: 450px) {
-  .video__title{
-    font-size: 20px;
-    line-height: 28px;
-    max-width: 246px;
+@media (max-width: 475px) {
+  .video{
+    &__title{
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 246px;
+    }
+    &__line{
+      display: none;
+    }
+    &__txt {
+      margin: auto 10px auto 0;
+    }
   }
-  .video__line{
-    display: none;
-  }
+
 }
 @media (max-width: 320px) {
   .video{
@@ -110,6 +193,10 @@
     }
     &__txt{
       width: 70%;
+      margin: auto 0;
+    }
+    &__title{
+      font-size: 19px;
     }
   }
 }

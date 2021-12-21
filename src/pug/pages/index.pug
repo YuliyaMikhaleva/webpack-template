@@ -290,16 +290,22 @@
       <div class="container">
         <div class="video__wrp">
           <div class="video__txt">
-            <button class="video__link wow fadeInLeft animated">посмотреть видео</button>
-            <h1 class="video__title wow fadeInLeft animated">сделано в перми <span class="video__name wow fadeInLeft animated">«Вектор-ПМ»</span></h1>
+            <button class="video__link wow fadeInLeft animated" id="show">посмотреть видео</button>
+            <h1 class="video__title wow fadeInLeft animated" data-wow-delay="1s">сделано в перми <div class="video__name">«Вектор-ПМ»</div></h1>
           </div>
-          <div class="video__line"></div>
-          <svg class="video__triangle" width="103" height="130" viewBox="0 0 103 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L101.595 64.9881L1 128.976V1Z" stroke="white" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <div class="video__line wow fadeInLeft animated" data-wow-delay="2s"></div>
+
+
+            <button id="button" class="video__circle  wow fadeInLeft animated" data-wow-delay="3s">
+              <svg class="video__triangle" data-wow-delay="3s" width="100.6" height="127.98" viewBox="0 0 103 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="video__triangle-path" d="M1 1L101.595 64.9881L1 128.976V1Z" stroke="white" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+
 
         </div>
-
+        <iframe id = "video" class="video__play" width="560" height="315" src="https://www.youtube.com/embed/FXNBSVTGCmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
     </section>
@@ -388,9 +394,9 @@
 
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+  <script src="./src/js/transition.js"></script>
+  <script src="./src/js/video.js"></script>
 </body>
 </html>
