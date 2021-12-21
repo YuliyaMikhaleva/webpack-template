@@ -18,12 +18,15 @@
    margin-right: 10px;
    border-bottom: 5px solid transparent;
    box-sizing: border-box;
+   transition: border-bottom 0.25s;
    &:hover{
      border-bottom: 5px solid $blueBG;
      box-sizing: border-box;
+     transition: border-bottom 0.25s;
    }
   &:hover .header__loop{
     stroke: $blueBG;
+    transition: stroke 0.25s;
   }
   &:active{
     border-bottom: 5px solid transparent;
@@ -46,9 +49,11 @@
    padding: 0;
    border-bottom: 5px solid transparent;
    box-sizing: border-box;
+   transition: border-bottom-color 0.25s;
    &:hover{
      border-bottom: 5px solid $blueBG;
      box-sizing: border-box;
+     transition: border-bottom-color 0.25s;
    }
  }
 }

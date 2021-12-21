@@ -12,7 +12,7 @@
   }
   &:hover .video__circle{
     transition: border 0.3s;
-    border: 1px solid white;
+    border: 1px solid $whiteColor;
   }
   &:hover .video__triangle-path{
     stroke-opacity:1;
@@ -30,14 +30,17 @@
     cursor: pointer;
     padding: 0;
     position: relative;
+    transition: opacity 0.25s, text-decoration 0.25s;
     &:hover{
       opacity: 1;
+      transition: opacity 0.25s;
     }
     &:active{
       opacity: 0.5;
     }
     &:hover{
       text-decoration: underline;
+      transition: text-decoration 0.25s;
     }
     &:active{
       text-decoration: none;
@@ -74,11 +77,12 @@
     border-radius: 50%;
     display: flex;
     box-sizing: border-box;
-    transition: border 0.3s;
     background: none;
     cursor: pointer;
+    transition: fill 0.25s, border 0.25s;
     &:hover .video__triangle{
-      fill: white;
+      fill: $whiteColor;
+      transition: fill 0.25s;
     }
     &:active .video__triangle{
       fill: none;
@@ -109,6 +113,7 @@
 
 @media (max-width: 1280px) {
   .video{
+    transition: background-size 0.25s;
     &__line{
       margin: auto 0 auto 32px;
       width: 170px;
@@ -128,6 +133,7 @@
     }
     &:hover{
       background-size: 200%;
+      transition: background-size 0.25s;
     }
   }
 }
@@ -141,6 +147,7 @@
 @media (max-width: 780px) {
   .video{
     background-image: url("../images/bg-video2.jpg");
+    transition: background-size 0.25s;
     &__title{
       font-size: 26px;
       line-height: 36px;
@@ -160,6 +167,7 @@
     }
     &:hover{
       background-size: 245%;
+      transition: background-size 0.25s;
     }
   }
 }

@@ -1,6 +1,7 @@
 .hover-article{
   background-color: $blueBG;
   opacity: 85%;
+  transition: display 0.25s;
   &__title{
     color: $whiteColor;
     font-weight: 700;

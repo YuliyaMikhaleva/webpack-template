@@ -6,6 +6,7 @@
     border: 0;
     padding: 0;
     cursor: pointer;
+    transition: transform 0.25s;
     &:first-child{
       width: 16px;
       height: 16px;
@@ -13,8 +14,12 @@
       box-sizing: border-box;
       background-color: transparent;
     }
+    &:first-child:hover{
+      transform: none;
+    }
     &:hover{
       transform: scale(2.5);
+      transition: transform 0.25s;
     }
     &:active{
       transform: scale(1);

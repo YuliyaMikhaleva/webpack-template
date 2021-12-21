@@ -38,12 +38,25 @@
   z-index: 99999999;
   &:hover .mobile-menu__line {
     background-color: $darkBlueColor;
+    transition: background-color 0.25s;
   }
   &:hover .mobile-menu__line:before {
     background-color: $darkBlueColor;
+    transition: background-color 0.25s;
   }
   &:hover .mobile-menu__line:after {
     background-color: $darkBlueColor;
+    transition: background-color 0.25s;
+  }
+}
+
+.mobile-menu__line{
+  transition: background-color 0.25s;
+  &:before{
+    transition: background-color 0.25s;
+  }
+  &:after{
+    transition: background-color 0.25s;
   }
 }
 
@@ -98,11 +111,16 @@
   margin: auto 0;
   &:hover .mobile-menu__loopSvg{
     stroke: $blueColor;
+    transition: stroke 0.25s;
   }
   &:active .mobile-menu__loopSvg{
     stroke: $whiteColor;
   }
 }
+.mobile-menu__loopSvg{
+  transition: stroke 0.25s;
+}
+
 .mobile-menu__search{
   display: flex;
   justify-content: space-between;
@@ -126,12 +144,12 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
-  //text-transform: uppercase;
   text-decoration: none;
-  transition-duration: .5s;
+  transition: color 0.25s;
 }
 .mobile-menu__item:hover {
   color:$darkBlueColor;
+  transition: color 0.25s;
 }
 .mobile-menu__item:hover .mobile-menu__itemSvg{
   stroke: $darkBlueColor;
@@ -149,6 +167,7 @@
   &:hover{
     background-color: $blueColor;
     color: $whiteColor;
+    transition: background-color 0.25s, color 0.25s;
   }
   &:active{
     background-color: transparent;

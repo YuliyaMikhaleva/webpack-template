@@ -53,8 +53,10 @@
     display: block;
     margin: auto 0 auto 10px;
     padding: 0 2px;
+    transition: color 0.25s;
     &:hover{
       color: $blueBG;
+      transition: color 0.25s;
     }
     &:active{
       color: $blueColor;
@@ -69,8 +71,10 @@
     margin: auto 15px auto 15px;
     padding: 0 2px;
     white-space: nowrap;
+    transition: color 0.25s;
     &:hover{
       color: $blueBG;
+      transition: color 0.25s;
     }
     &:active{
       color: $blueColor;
@@ -85,6 +89,7 @@
     margin:auto;
     :hover .header__phoneicon{
       stroke: $redColor;
+      transition: stroke 0.25s;
     }
     :active .header__phoneicon{
       stroke: $blueColor;
@@ -94,6 +99,7 @@
   &__phoneicon{
     display: block;
     margin: 0 auto;
+    transition: stroke 0.25s;
   }
   &__btn{
     background-color: $blueBG;
@@ -110,6 +116,7 @@
       background-color: transparent;
       border: 2px solid $blueBG;
       color: $blueBG;
+      transition: color 0.25s, border 0.25s, background-color 0.25s;
     }
     &:active{
       background-color: $blueBG;
@@ -123,10 +130,14 @@
     cursor: pointer;
     :hover .header__basketIcon{
       stroke: $redColor;
+      transition: stroke 0.25s;
     }
     :active .header__basketIcon{
       stroke: $blueBG;
     }
+  }
+  &__basketIcon{
+    transition: stroke 0.25s;
   }
   &__counter{
     background-color: #FF6C5D;
@@ -148,11 +159,8 @@
   &__mobilemenu{
     display: none;
   }
-}
-
-.logo{
-  &:hover .logo__words{
-    fill: $blueBG;
+  &__loop{
+    transition: stroke 0.25s;
   }
 }
 
@@ -288,6 +296,5 @@
 @media (max-width: 710px) {
   .header__contacts{
     padding: 15px 0 15px 16px;
-
   }
 }

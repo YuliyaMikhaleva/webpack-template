@@ -43,6 +43,7 @@
       color: $blueBG;
       border: 1px solid $blueBG;
       box-sizing: border-box;
+      transition: background-color 0.25s, color 0.25s, border 0.25s;
     }
     &:active{
       background-color: $blueBG;

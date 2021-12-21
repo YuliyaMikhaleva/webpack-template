@@ -1,0 +1,9 @@
+.logo{
+  &:hover .logo__words{
+    fill: $blueBG;
+    transition: fill 0.25s;
+  }
+  &__words{
+    transition: fill 0.25s;
+  }
+}

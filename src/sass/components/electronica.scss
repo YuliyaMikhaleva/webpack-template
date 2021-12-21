@@ -26,9 +26,11 @@
     font-size: 12px;
     line-height: 14.63px;
     padding: 15px 33px;
+    transition: background-color 0.25s, border 0.25s;
     &:hover{
       background-color: $blueBG;
       border: 1px solid $blueBG;
+      transition: background-color 0.25s, border 0.25s;
     }
     &:active{
       background-color: transparent;
@@ -101,25 +103,31 @@
     background-color: #002871;
     border: 0;
     z-index: 9999;
+    transition: background-color 0.25s;
     &:first-child{
       transform: rotate(180deg);
       margin-right: 1px;
     }
     &:hover{
-      background-color: #025BFF;
+      background-color: $blueBG;
+      transition: background-color 0.25s;
     }
     &:hover .electronica__arrowPath{
-      fill: white;
+      transition: fill 0.25s;
+      fill: $whiteColor;
     }
     &:active{
       background-color: #002871;
     }
     &:active .electronica__arrowPath{
-      fill: #025BFF;
+      fill: $blueBG;
     }
 
   }
-  .electronica__arrowSvg{
+  &__arrowPath{
+    transition: fill 0.25s;
+  }
+  &__arrowSvg{
     display: block;
     margin: auto;
   }

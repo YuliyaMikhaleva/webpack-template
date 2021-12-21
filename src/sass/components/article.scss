@@ -34,6 +34,15 @@
   &__link{
     justify-self: flex-end;
     margin-top: auto;
+    transition: fill 0.25s;
+    &:hover .article__link-svg{
+      fill: $blueColor;
+      transition: fill 0.25s;
+    }
+    &:active .article__link-svg{
+      fill: $whiteColor;
+      transition: fill 0.25s;
+    }
   }
 }
 
