@@ -1,20 +1,4 @@
 .article{
-  &:nth-child(2) > img{
-    width: 48px;
-  }
-  &:nth-child(2) > h1{
-    margin: 46px 0 52px 0;
-    font-size: 20px;
-    line-height: 28px;
-  }
-  &:nth-child(3) > img{
-    width: 48px;
-  }
-  &:nth-child(3) > h1{
-    margin: 28px 0 20px 0;
-    font-size: 18px;
-    line-height: 24px;
-  }
   &__img{
     width: 66px;
   }

@@ -17,8 +17,14 @@
       transition: display 0.25s;
     }
   }
-  &__img{
+  &__img-wrp{
     width: 100%;
+    height: 231px;
+  }
+  &__img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
   &__title{
     font-weight: 700;
@@ -48,9 +54,17 @@
   .product-article__hover{
     padding: 29px 13px 27px 30px;
   }
+  .product-article__img-wrp{
+    height: 180px;
+  }
 }
-@media (max-width: 1280px) {
-  .product-article__hover{
-    padding: 29px 13px 27px 30px;
+@media (max-width: 780px) {
+  .product-article__img-wrp{
+    height: 145px;
+  }
+}
+@media (max-width: 320px) {
+  .product-article__img-wrp{
+    height: 170px;
   }
 }
