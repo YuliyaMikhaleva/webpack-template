@@ -1,0 +1,97 @@
+.about-company{
+  height: 1049px;
+  background-image: url("../images/map.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 162px 0 154px 100px;
+  box-sizing: border-box;
+  &__border{
+    width: 947px;
+    height: 733px;
+  }
+  &__text{
+    position: absolute;
+    top: 14%;
+    left: 26%;
+    display: flex;
+  }
+  &__paragraph{
+    width: 720px;
+    min-height: 186px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 13% 0 0 0;
+    cursor: pointer;
+    &:hover{
+      color: #025BFF;
+    }
+  }
+  &__paragraph-title{
+    font-weight: 500;
+    font-size: 23px;
+    letter-spacing: 0.05em;
+    line-height: 35px;
+  }
+  &__item{
+    max-width: 220px;
+  }
+  &__title{
+    margin: 16% 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $blueBG;
+    position: relative;
+  }
+  &__gps{
+    margin: 15% 16px auto 0;
+  }
+  &__title-block{
+    cursor: pointer;
+    height: 30px;
+    display: block;
+    margin: auto;
+    &:hover .about-company__title{
+      color: $redColor;
+    }
+    &:hover .about-company__gps-svg{
+      fill: $redColor;;
+    }
+  }
+  &__line{
+    width: 197px;
+    height: 2px;
+    background-color: $blueBG;
+    margin: 17% 36px auto 72px;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1471px;
+  }
+  &__icon{
+    display: block;
+  }
+  &__number{
+    display: block;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 118%;
+    color: $blueBG;
+    margin: 21px 0 9px 0;
+  }
+  &__param{
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #131313;
+  }
+}
