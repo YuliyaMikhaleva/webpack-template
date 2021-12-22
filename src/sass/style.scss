@@ -16,11 +16,19 @@ a{
   font-style: normal;
   margin: 0;
   padding: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 100vh;
   &__main{
     min-height: 200px;
   }
   &__footer{
     padding-top: 511px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
   }
 }
 
