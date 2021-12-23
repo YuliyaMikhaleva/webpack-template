@@ -12,6 +12,7 @@
     }
     &:hover .arrows__svg-path{
       fill: $blueBG;
+      transition: fill 0.25s;
     }
     &:active .arrows__svg-path{
       fill: #002871;
@@ -20,5 +21,8 @@
   &__btn-svg{
     display: block;
     margin: auto;
+  }
+  &__svg-path{
+    transition: fill 0.25s;
   }
 }

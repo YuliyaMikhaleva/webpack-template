@@ -190,9 +190,14 @@
   }
 
 }
+@media (max-width: 340px) {
+  .video:hover{
+    background-size: 200% 200%;
+  }
+}
 @media (max-width: 320px) {
   .video{
-    background-size: 210% 100%;
+    background-size: 260%;
     background-position: 44% 0%;
     &__triangle{
       width:35px;
@@ -210,4 +215,3 @@
     }
   }
 }
-

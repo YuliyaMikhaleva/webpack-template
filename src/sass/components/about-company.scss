@@ -53,8 +53,10 @@
     line-height: 30px;
     cursor: pointer;
     margin: 0;
+    transition: color 0.25s;
     &:hover{
       color: $blueBG;
+      transition: color 0.25s;
     }
   }
   &__paragraph-title{
@@ -75,6 +77,10 @@
     color: $blueBG;
     position: relative;
     white-space: nowrap;
+    transition: color 0.25s;
+  }
+  &__gps-svg{
+    transition: fill 0.25s;
   }
   &__title-block{
     cursor: pointer;
@@ -85,9 +91,11 @@
     white-space: nowrap;
     &:hover .about-company__title{
       color: $redColor;
+      transition: color 0.25s;
     }
     &:hover .about-company__gps-svg{
-      fill: $redColor;;
+      fill: $redColor;
+      transition: fill 0.25s;
     }
   }
   &__line{
