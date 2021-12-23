@@ -1,20 +1,49 @@
 .about-company{
   height: 1049px;
   background-image: url("../images/map.svg");
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
   position: relative;
-  padding: 162px 0 154px 100px;
+  padding: 162px 10px 154px 100px;
   box-sizing: border-box;
+  &__arrows{
+    display: none;
+  }
+  &__hidden{
+    display: none;
+  }
+  &__show{
+    display: none;
+  }
+  &__page1{
+    display: none;
+    list-style-type: none;
+  }
+  &__page2{
+    display: none;
+    list-style-type: none;
+  }
+  &__page3{
+    display: none;
+    list-style-type: none;
+  }
   &__border{
+    position: absolute;
+    margin:162px 226px 155px 100px;
+    top: 0;
+    left: 0;
     width: 947px;
     height: 733px;
   }
   &__text{
-    position: absolute;
-    top: 14%;
-    left: 26%;
     display: flex;
+    justify-content: space-between;
+    margin-top:139px;
+    align-content: center;
+    max-width: 68%;
+    margin-left: 392px;
+    margin-right: 90px;
   }
   &__paragraph{
     width: 720px;
@@ -22,10 +51,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
-    margin: 13% 0 0 0;
     cursor: pointer;
+    margin: 0;
     &:hover{
-      color: #025BFF;
+      color: $blueBG;
     }
   }
   &__paragraph-title{
@@ -33,26 +62,27 @@
     font-size: 23px;
     letter-spacing: 0.05em;
     line-height: 35px;
+    display: block;
   }
   &__item{
     max-width: 220px;
   }
   &__title{
-    margin: 16% 0 auto;
+    margin: 16% 0 auto 16px;
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
     color: $blueBG;
     position: relative;
-  }
-  &__gps{
-    margin: 15% 16px auto 0;
+    white-space: nowrap;
   }
   &__title-block{
     cursor: pointer;
     height: 30px;
     display: block;
-    margin: auto;
+    margin: auto 0;
+    margin-top: 27px;
+    white-space: nowrap;
     &:hover .about-company__title{
       color: $redColor;
     }
@@ -62,19 +92,23 @@
   }
   &__line{
     width: 197px;
+    min-width: 83px;
     height: 2px;
     background-color: $blueBG;
-    margin: 17% 36px auto 72px;
+    margin: auto 0;
+    margin-top: 50px;
+    margin-left: 36px;
+    margin-right: 36px;
   }
   &__list{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 30px;
     list-style-type: none;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 1471px;
+    margin-top: 20px;
+    padding: 0;
+    margin-left: 131px;
+    max-width: 1471px;
   }
   &__icon{
     display: block;
@@ -93,5 +127,178 @@
     font-size: 16px;
     line-height: 22px;
     color: #131313;
+  }
+  &__pagination{
+    width: 88px;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+  }
+  &__page{
+    background-color: #A9BAD8;
+    width: 6px;
+    height: 6px;
+    color: transparent;
+    font-size: 0;
+  }
+  &__active-page{
+    background-color: $blueBG;
+    width: 16px;
+    height: 16px;
+    &:hover{
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .about-company{
+    background-position-x:32%;
+    &__border{
+      width: 658px;
+    }
+    &__text{
+      margin-left: 191px;
+    }
+    &__list{
+      margin-left: 23px;
+    }
+    &__line{
+      width: 83px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .about-company__border{
+    height: 710px;
+  }
+  .about-company__paragraph{
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1265px) {
+  .about-company{
+    padding: 65px 10px 157px 46px;
+    background-position-x: 57%;
+    background-position-y: -149px;
+    background-size: cover;
+    &__text{
+      flex-direction: column;
+      margin-top: 90px;
+      margin-left: 20px;
+    }
+    &__line{
+      display: none;
+    }
+    &__title-block{
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    &__list{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      max-width: 658px;
+      margin-left: 20px;
+    }
+    &__border{
+      height: 865px;
+      margin: 67px 42px 90px 42px;
+    }
+    &__paragraph{
+      width: 685px;
+    }
+  }
+
+}
+@media (max-width: 780px) {
+  .about-company{
+    background-position-x: 34%;
+    background-position-y: -126px;
+    background-size: cover;
+  }
+}
+@media (max-width: 750px) {
+  .about-company{
+    padding: 50px 17px 157px 21px;
+    height: 100%;
+    &__border{
+      margin: 50px 17px 116px 16px;
+      width: 93%;
+      height: 85%;
+    }
+    &__text{
+      margin-top: 51px;
+    }
+    &__paragraph{
+      width: 129%;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  .about-company__list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .about-company{
+    &__paragraph{
+      font-size: 14px;
+      line-height: 22px;
+    }
+    &__paragraph-title{
+      font-size: 17px;
+      line-height: 27px;
+    }
+    &__number{
+      font-size: 28px;
+      line-height: 118%;
+    }
+    &__param{
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .about-company{
+    &__list{
+      display: none;
+    }
+    &__show{
+      padding: 0 0 0 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+      list-style-type: none;
+      height: 219px;
+    }
+    &__item{
+      max-width: 141px;
+    }
+    &__param{
+      font-size: 10px;
+      line-height: 22px;
+    }
+    &__pagination{
+      display: grid;
+      grid-gap: 30px;
+    }
+    &__hidden{
+      display: none;
+    }
+    &__arrow{
+      margin-right: 46px;
+    }
+    &__arrows{
+      display: block;
+    }
   }
 }

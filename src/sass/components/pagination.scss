@@ -7,22 +7,12 @@
     padding: 0;
     cursor: pointer;
     transition: transform 0.25s;
-    &:first-child{
-      width: 16px;
-      height: 16px;
-      border: 1px solid $whiteColor;
-      box-sizing: border-box;
-      background-color: transparent;
-    }
-    &:first-child:hover{
-      transform: none;
-    }
     &:hover{
-      transform: scale(2.5);
+      transform: scale(2);
       transition: transform 0.25s;
     }
     &:active{
-      transform: scale(1);
+      transform: scale(0.5);
     }
   }
 }

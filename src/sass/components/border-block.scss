@@ -1,11 +1,8 @@
 .border-block {
-  border-top: 5px solid #025BFF;
-  border-bottom: 5px solid #025BFF;
-  border-left: 5px solid #025BFF;
+  border-top: 5px solid $blueBG;
+  border-bottom: 5px solid $blueBG;
+  border-left: 5px solid $blueBG;
   box-sizing: border-box;
-  position: relative;
-  width: 947px;
-  height: 733px;
   &::before {
     position: absolute;
     content: '';

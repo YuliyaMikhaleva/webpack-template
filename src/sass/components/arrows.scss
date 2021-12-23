@@ -1,0 +1,24 @@
+.arrows{
+  position: absolute;
+  bottom: 3.5%;
+  right: 4%;
+  &__btn{
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    &:first-child{
+      transform: rotate(180deg);
+    }
+    &:hover .arrows__svg-path{
+      fill: $blueBG;
+    }
+    &:active .arrows__svg-path{
+      fill: #002871;
+    }
+  }
+  &__btn-svg{
+    display: block;
+    margin: auto;
+  }
+}
