@@ -9,6 +9,9 @@
   box-sizing: border-box;
   &__arrows{
     display: none;
+    position: absolute;
+    bottom: 3.5%;
+    right: 4%;
   }
   &__hidden{
     display: none;

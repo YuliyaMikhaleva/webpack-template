@@ -1,0 +1,105 @@
+.slider-article{
+  width: 595px;
+  height: 464px;
+  background-color: $blueBG;
+  padding: 24px 36px 52px 55px;
+  box-sizing: border-box;
+  z-index: 99;
+  &__count{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    &:hover {
+      .slider-article__number{
+        opacity: 100%;
+        transition: opacity 0.25s;
+      }
+      .slider-article__total{
+        opacity: 100%;
+        transition: opacity 0.25s;
+      }
+    }
+  }
+
+  &__number{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 118%;
+    color: $whiteColor;
+    opacity: 0.2;
+    margin: 0 7px 0 0;
+    transition: opacity 0.25s;
+  }
+  &__total{
+    font-weight: bold;
+    line-height: 118%;
+    color: $whiteColor;
+    opacity: 0.2;
+    font-size: 24px;
+    transition: opacity 0.25s;
+  }
+  &__title{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 140%;
+    color: $whiteColor;
+    margin: 9px 0 25px 0;
+    display: block;
+  }
+  &__main-title{
+    font-weight: 700;
+  }
+  &__text{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: $whiteColor;
+    width: 381px;
+    margin: 0 0 66px 0;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button{
+    color: $whiteColor;
+    text-transform: uppercase;
+    width: 205px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    padding: 15px 33px;
+    border: 1px solid $whiteColor;
+    transition: background-color 0.25s, color 0.25s;
+    &:hover{
+      background-color: $whiteColor;
+      color: $blueBG;
+      transition: background-color 0.25s, color 0.25s;
+    }
+  }
+  &__save{
+    color: $whiteColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    background: none;
+    border: transparent;
+    padding: 0;
+    transition: color 0.25s;
+    &:hover{
+      color: rgba(255, 255, 255, 0.61);
+      transition: color 0.25s;
+    }
+    &:hover .slider-article__save-path{
+      stroke: rgba(255, 255, 255, 0.61);
+      transition: stroke 0.25s;
+    }
+  }
+  &__save-svg{
+    margin-left: 15px;
+  }
+  &__save-path{
+    transition: stroke 0.25s;
+  }
+}
