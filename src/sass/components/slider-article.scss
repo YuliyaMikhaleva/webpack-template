@@ -1,10 +1,5 @@
 .slider-article{
-  width: 595px;
-  height: 464px;
   background-color: $blueBG;
-  padding: 24px 36px 52px 55px;
-  box-sizing: border-box;
-  z-index: 99;
   &__count{
     display: flex;
     justify-content: flex-end;
@@ -101,5 +96,79 @@
   }
   &__save-path{
     transition: stroke 0.25s;
+  }
+}
+
+@media (max-width: 1280px) {
+  .slider-article{
+    &__number{
+      font-size: 32px;
+      line-height: 37.76px;
+    }
+    &__total{
+      font-size: 16px;
+      line-height: 118%;
+    }
+    &__title{
+      margin: 2px 0 1px 0;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .slider-article{
+    &__number{
+      font-size: 26px;
+      line-height: 30.68px;
+    }
+    &__total{
+      font-size: 14px;
+      line-height: 16.52px;
+    }
+    &__title{
+      margin: 25px 0 20px 0;
+      font-size: 26px;
+      line-height: 36.4px;
+
+    }
+    &__text{
+      margin: 0 0 37px 0;
+      font-size: 15px;
+    }
+    &__save{
+      text-align: left;
+      margin-top: 19px;
+    }
+    &__buttons{
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .slider-article{
+    width: 100%;
+    &__title{
+      font-size: 20px;
+      line-height: 28px;
+      margin: 32px 0 15px 0;
+    }
+    &__text{
+      width: 246px;
+      margin-bottom: 52px;
+    }
+    &__button{
+      width: 100%;
+    }
+    &__save{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .slider-article{
+    width: 104%;
+    left: -2%;
   }
 }
