@@ -1,5 +1,17 @@
 .slider-production{
   background-color: #EAF2FA;
+  &__img-hidden{
+    display: none;
+  }
+  &__img-show{
+    display: block;
+  }
+  &__mobileimg-hidden{
+    display: none;
+  }
+  &__mobileimg-show{
+    display: block;
+  }
   &__img-wrp{
     width: 970px;
     height: 640px;
@@ -7,6 +19,7 @@
     cursor: pointer;
     &:hover .slider-production__hover-wrp{
       background-color: $blueBG;
+      transition: background-color 0.25s;
     }
     &:hover .slider-production__button-plus{
       animation: anim 1s;
@@ -26,10 +39,12 @@
     text-align: center;
     line-height: 40px;
     box-sizing: border-box;
+    transition: border 0.25s, padding 0.25s;
     &:hover{
       border: 2px solid white;
       padding: 0;
       box-sizing: border-box;
+      transition: border 0.25s, padding 0.25s;
     }
     &:active .slider-production__img-wrp{
         width: 100%;
@@ -44,13 +59,16 @@
     height: 100%;
     background-color: transparent;
     opacity: 0.7;
+    transition: background-color 0.25s;
   }
   &__img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: background-color 0.25s;
     &:hover .slider-production__hover-wrp{
       background-color: $blueBG;
+      transition: background-color 0.25s;
     }
 
   }
@@ -60,6 +78,7 @@
     cursor: pointer;
     &:hover .slider-production__hover-wrp{
       background-color: $blueBG;
+      transition: background-color 0.25s;
     }
     &:hover .slider-production__button-plus{
       animation: anim 1s;
@@ -73,6 +92,8 @@
   }
   &__pagination-button{
     background-color: #A9BAD8;
+    font-size: 0;
+    color: transparent;
   }
   &__pagination{
     width: 88px;
@@ -111,6 +132,9 @@
     padding: 24px 36px 52px 55px;
     box-sizing: border-box;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   &__plus-block{
     width: 970px;
@@ -143,6 +167,12 @@
       box-sizing: border-box;
       transition: border 0.25s;
     }
+  }
+  &__show{
+    display: flex;
+  }
+  &__hidden{
+    display: none;
   }
 }
 

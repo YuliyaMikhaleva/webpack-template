@@ -15,7 +15,12 @@
       }
     }
   }
-
+  &:nth-of-type(2){
+    background-color: cornflowerblue;
+  }
+  &:nth-of-type(3){
+    background-color: darkblue;
+  }
   &__number{
     font-weight: bold;
     font-size: 52px;
@@ -56,6 +61,7 @@
   &__buttons{
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
   }
   &__button{
     color: $whiteColor;
