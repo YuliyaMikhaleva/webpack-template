@@ -55,6 +55,11 @@ a{
     padding-bottom: 121px;
     box-sizing: border-box;
   }
+  &__news{
+    min-height: 837px;
+    padding: 100px 0;
+    //padding: 100px 224px 100px 225px;
+  }
 }
 
 .container{
@@ -100,6 +105,12 @@ a{
 @media (max-width: 710px) {
   .main__electronica {
     padding: 51px 0 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .main__news{
+    padding: 59px 0;
   }
 }
 
