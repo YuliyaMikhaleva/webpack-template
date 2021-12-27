@@ -67,6 +67,73 @@ a{
   height: 100%;
 }
 
+
+.card{
+  border: 2px solid orange;
+}
+.swiper-container {
+  width: 970px;
+  height: 640px;
+  margin: 0;
+}
+.swiper-button-prev:after {
+  content: none;
+}
+.swiper-button-next:after {
+  content: none;
+}
+.arrows{
+  display: flex;
+}
+.swiper{
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-buttons{
+  display: flex;
+  height: 18px;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.swiper-pagination > span{
+  display: block;
+}
+.swiper-pagination{
+  position: relative;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  width: 88px;
+  padding: 0;
+  margin-top: 50px;
+}
+.swiper-pagination-bullet {
+  border-radius:0; // либо вообще удалить эту строчку из CSS
+}
+
+.swiper-button-prev{
+  position: relative;
+  transform: rotate(180deg);
+  margin: 0;
+  height: 18px;
+}
+.swiper-button-next{
+  position: relative;
+  margin: 0;
+  height: 18px;
+}
+//.swiper-wrapper{
+//  position: absolute;
+//}
+//.swiper-wrp{
+//  position: absolute;
+//}
+.swiper-img{
+  width: 970px;
+  height: 640px;
+}
+
 @media (max-width: 1280px) {
   .container{
     margin: 0 4.3%;

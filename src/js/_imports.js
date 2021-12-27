@@ -3,5 +3,5 @@ import './form';
 import './transition'
 import './video'
 import './slider-about'
-import './slider-production'
+// import './slider-production'
 import './switch'
