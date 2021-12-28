@@ -48,17 +48,15 @@ a{
     padding: 205px 0 135px 0;
     box-sizing: border-box;
   }
-  &__slider-production{
+  &__slider{
     width: 100%;
-    //min-height: 868px;
+    min-height: 935px;
     padding-top: 107px;
-    padding-bottom: 121px;
     box-sizing: border-box;
   }
   &__news{
     min-height: 837px;
     padding: 100px 0;
-    //padding: 100px 224px 100px 225px;
   }
 }
 
@@ -68,71 +66,8 @@ a{
 }
 
 
-.card{
-  border: 2px solid orange;
-}
-.swiper-container {
-  width: 970px;
-  height: 640px;
-  margin: 0;
-}
-.swiper-button-prev:after {
-  content: none;
-}
-.swiper-button-next:after {
-  content: none;
-}
-.arrows{
-  display: flex;
-}
-.swiper{
-  display: flex;
-  justify-content: space-between;
-}
-.swiper-buttons{
-  display: flex;
-  height: 18px;
-  justify-content: space-between;
-  margin-top: 35px;
-}
-.swiper-pagination > span{
-  display: block;
-}
-.swiper-pagination{
-  position: relative;
-  display: flex;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 30px;
-  width: 88px;
-  padding: 0;
-  margin-top: 50px;
-}
-.swiper-pagination-bullet {
-  border-radius:0; // либо вообще удалить эту строчку из CSS
-}
 
-.swiper-button-prev{
-  position: relative;
-  transform: rotate(180deg);
-  margin: 0;
-  height: 18px;
-}
-.swiper-button-next{
-  position: relative;
-  margin: 0;
-  height: 18px;
-}
-//.swiper-wrapper{
-//  position: absolute;
-//}
-//.swiper-wrp{
-//  position: absolute;
-//}
-.swiper-img{
-  width: 970px;
-  height: 640px;
-}
+
 
 @media (max-width: 1280px) {
   .container{
@@ -142,7 +77,6 @@ a{
     padding: 70px 0 55px;
   }
   .main__video{
-    //height: 517px;
     padding: 155px 0 117px 0;
   }
 }
@@ -180,7 +114,6 @@ a{
     padding: 59px 0;
   }
 }
-
 
 @media (max-width: 320px) {
   .main__production{

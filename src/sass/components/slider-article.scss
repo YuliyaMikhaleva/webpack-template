@@ -55,7 +55,7 @@
     font-size: 16px;
     line-height: 22.4px;
     color: $whiteColor;
-    width: 381px;
+    width: 96%;
     margin: 0 0 66px 0;
   }
   &__buttons{
@@ -121,6 +121,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .slider-article__buttons{
+    flex-direction: column;
+  }
+  .slider-article__save{
+    text-align: left;
+    margin-top: 19px;
+  }
+}
+
 @media (max-width: 780px) {
   .slider-article{
     &__number{
@@ -141,13 +151,8 @@
       margin: 0 0 37px 0;
       font-size: 15px;
     }
-    &__save{
-      text-align: left;
-      margin-top: 19px;
-    }
-    &__buttons{
-      flex-direction: column;
-    }
+
+
   }
 }
 
@@ -160,7 +165,6 @@
       margin: 32px 0 15px 0;
     }
     &__text{
-      width: 246px;
       margin-bottom: 52px;
     }
     &__button{

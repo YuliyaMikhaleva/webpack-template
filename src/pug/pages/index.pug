@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css" media="all" >
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body class="body">
   <header class="header  body__header">
@@ -464,93 +463,95 @@
       </div>
     </section>
 
-    <section class="slider-production main__slider-production">
-      <div class="container slider-production__wrp">
-        <nav class="pagination slider-production__pagination">
-          <button class="pagination__button slider-production__pagination-button slider-production__active-button">1</button>
-          <button class="pagination__button slider-production__pagination-button">2</button>
-          <button class="pagination__button slider-production__pagination-button">3</button>
-        </nav>
-        <div class="arrows slider-production__arrows">
-          <button class="arrows__btn slider-production__arrow slider-production__arrow-left">
-            <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
-            </svg>
-          </button>
-          <button class="arrows__btn slider-production__arrow">
-            <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
-            </svg>
-          </button>
+    <section class="slider  main__slider">
+      <section class="swiper container">
+        <div class="slider__img-wrp">
+          <div class="slider__hover-wrp"></div>
+          <div class="slider__button-plus">+</div>
+          <img class="slider__img active-img" src="../../images/slider-product1.jpg" alt="photo">
+          <img class="slider__img" src="https://topwar.ru/uploads/posts/2018-03/1521167711_gpn1470.jpg" alt="photo">
+          <img class="slider__img" src="https://knit-story.ru/upload/resize_cache/iblock/7dc/1500_1500_0/7dc5ecca6472e0f72dde7decf96abf1a.jpg" alt="photo">
         </div>
-        <div class="slider-production__img-wrp">
-          <div class="slider-production__hover-wrp"></div>
-          <div class="slider-production__button-plus">+</div>
-          <img id="slider-production__img1" class="slider-production__img slider-production__img-show" src="../../images/slider-product1.jpg" alt="photo">
-          <img id="slider-production__img2" class="slider-production__img slider-production__img-hidden" src="https://topwar.ru/uploads/posts/2018-03/1521167711_gpn1470.jpg" alt="photo">
-          <img id="slider-production__img3" class="slider-production__img slider-production__img-hidden" src="https://knit-story.ru/upload/resize_cache/iblock/7dc/1500_1500_0/7dc5ecca6472e0f72dde7decf96abf1a.jpg" alt="photo">
+        <div class="swiper-container">
+          <div class="swiper-header">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-buttons">
+              <button class="arrows__btn slider__arrow slider__arrow-left swiper-button-prev">
+                <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
+                </svg>
+              </button>
+              <button class="arrows__btn slider__arrow swiper-button-next">
+                <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-wrapper">
+            <article class="swiper-slide swiper-card">
+              <div class="slider-article__count">
+                <p class="slider-article__number">01/</p><span class="slider-article__total">03</span>
+              </div>
+              <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
+              <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
+              <div class="slider-article__buttons">
+                <a class="button slider-article__button" href="#">перейти в каталог</a>
+                <button class="button slider-article__save" href="#">
+                  <span>Cкачать каталог</span>
+                  <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </article >
+            <article class="swiper-slide swiper-card">
+              <div class="slider-article__count">
+                <p class="slider-article__number">02/</p><span class="slider-article__total">03</span>
+              </div>
+              <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
+              <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
+              <div class="slider-article__buttons">
+                <a class="button slider-article__button" href="#">перейти в каталог</a>
+                <button class="button slider-article__save" href="#">
+                  <span>Cкачать каталог</span>
+                  <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </article >
+            <article class="swiper-slide swiper-card">
+              <div class="slider-article__count">
+                <p class="slider-article__number">03/</p><span class="slider-article__total">03</span>
+              </div>
+              <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
+              <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
+              <div class="slider-article__buttons">
+                <a class="button slider-article__button" href="#">перейти в каталог</a>
+                <button class="button slider-article__save" href="#">
+                  <span>Cкачать каталог</span>
+                  <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </article >
+          </div>
 
         </div>
-
-        <article id="slider-production1" class="slider-article slider-production__article slider-production__show">
-          <div class="slider-article__count">
-            <p class="slider-article__number">01/</p><span class="slider-article__total">03</span>
-          </div>
-          <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
-          <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
-          <div class="slider-article__buttons">
-            <a class="button slider-article__button" href="#">перейти в каталог</a>
-            <button class="button slider-article__save" href="#">
-              <span>Cкачать каталог</span>
-              <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-        </article>
-        <article id="slider-production2" class="slider-article slider-production__article slider-production__hidden">
-          <div class="slider-article__count">
-            <p class="slider-article__number">02/</p><span class="slider-article__total">03</span>
-          </div>
-          <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> 2</h>
-          <p class="slider-article__text">Описание производства 2</p>
-          <div class="slider-article__buttons">
-            <a class="button slider-article__button" href="#">перейти в каталог</a>
-            <button class="button slider-article__save" href="#">
-              <span>Cкачать каталог</span>
-              <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-        </article>
-        <article id="slider-production3" class="slider-article slider-production__article slider-production__hidden">
-          <div class="slider-article__count">
-            <p class="slider-article__number">03/</p><span class="slider-article__total">03</span>
-          </div>
-          <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> 3</h>
-          <p class="slider-article__text">Описание производства 3</p>
-          <div class="slider-article__buttons">
-            <a class="button slider-article__button" href="#">перейти в каталог</a>
-            <button class="button slider-article__save" href="#">
-              <span>Cкачать каталог</span>
-              <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-        </article>
-
-
-      </div>
-      <div class="slider-production__img-mobile">
-        <div class="slider-production__hover-wrp"></div>
-        <div class="slider-production__button-plus">+</div>
-        <img id="slider-production__mobile-img1" class="slider-production__img slider-production__mobileimg-show" src="../../images/slider-product1.jpg" alt="photo">
-        <img id="slider-production__mobile-img2" class="slider-production__img slider-production__mobileimg-hidden" src="https://topwar.ru/uploads/posts/2018-03/1521167711_gpn1470.jpg" alt="photo">
-        <img id="slider-production__mobile-img3" class="slider-production__img slider-production__mobileimg-hidden" src="https://knit-story.ru/upload/resize_cache/iblock/7dc/1500_1500_0/7dc5ecca6472e0f72dde7decf96abf1a.jpg" alt="photo">
-      </div>
+        <div class="slider__img-mobile">
+          <div class="slider__hover-wrp"></div>
+          <div class="slider__button-plus">+</div>
+          <img class="slider__img active-img" src="../../images/slider-product1.jpg" alt="photo">
+          <img class="slider__img" src="https://topwar.ru/uploads/posts/2018-03/1521167711_gpn1470.jpg" alt="photo">
+          <img class="slider__img" src="https://knit-story.ru/upload/resize_cache/iblock/7dc/1500_1500_0/7dc5ecca6472e0f72dde7decf96abf1a.jpg" alt="photo">
+        </div>
+      </section>
     </section>
+
+
 
     <section class="news container main__news">
       <div class="news__wrp">
@@ -606,74 +607,93 @@
 
     </section>
 
-    <div class="swiper container">
-      <div class="swiper-pagination"></div>
-      <div class="swiper-buttons">
-        <button class="arrows__btn slider-production__arrow slider-production__arrow-left swiper-button-prev">
-          <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
-          </svg>
-        </button>
-        <button class="arrows__btn slider-production__arrow swiper-button-next">
-          <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
-          </svg>
-        </button>
-      </div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <article class="swiper-slide card">
-            <div class="slider-article__count">
-              <p class="slider-article__number">01/</p><span class="slider-article__total">03</span>
-            </div>
-            <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
-            <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
-            <div class="slider-article__buttons">
-              <a class="button slider-article__button" href="#">перейти в каталог</a>
-              <button class="button slider-article__save" href="#">
-                <span>Cкачать каталог</span>
-                <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </article >
-          <article class="swiper-slide card">
-            <div class="slider-article__count">
-              <p class="slider-article__number">01/</p><span class="slider-article__total">03</span>
-            </div>
-            <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
-            <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
-            <div class="slider-article__buttons">
-              <a class="button slider-article__button" href="#">перейти в каталог</a>
-              <button class="button slider-article__save" href="#">
-                <span>Cкачать каталог</span>
-                <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </article >
-          <article class="swiper-slide card">
-            <div class="slider-article__count">
-              <p class="slider-article__number">01/</p><span class="slider-article__total">03</span>
-            </div>
-            <h class="slider-article__title"><span class="slider-article__main-title">Продукция Уралвес</span> - вершина технической эволюции</h>
-            <p class="slider-article__text">Снижение себестоимости производства, затрат на логистику и штрафы</p>
-            <div class="slider-article__buttons">
-              <a class="button slider-article__button" href="#">перейти в каталог</a>
-              <button class="button slider-article__save" href="#">
-                <span>Cкачать каталог</span>
-                <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </article >
+    <section class="main__slider">
+      <section class="swiper container">
+        <div class="slider__img-wrp">
+          <div class="slider__hover-wrp"></div>
+          <div class="slider__button-plus">+</div>
+          <img class="slider__img active-img" src="../../images/slider-product2.jpg" alt="photo">
+          <img class="slider__img" src="https://topwar.ru/uploads/posts/2018-03/1521167711_gpn1470.jpg" alt="photo">
+          <img class="slider__img" src="https://knit-story.ru/upload/resize_cache/iblock/7dc/1500_1500_0/7dc5ecca6472e0f72dde7decf96abf1a.jpg" alt="photo">
         </div>
-      </div>
-    </div>
+        <div class="swiper-container">
+          <div class="swiper-header">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-buttons">
+              <button class="arrows__btn slider__arrow slider__arrow-left swiper-button-prev">
+                <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
+                </svg>
+              </button>
+              <button class="arrows__btn slider__arrow swiper-button-next">
+                <svg class="arrows__btn-svg" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="arrows__svg-path" d="M12.7137 2.11913C12.3203 1.73052 12.3184 1.09596 12.7094 0.704945C13.0987 0.315615 13.73 0.315615 14.1193 0.704946L22.0001 8.58579L14.1193 16.4665C13.73 16.8559 13.0988 16.8559 12.7094 16.4665C12.3184 16.0755 12.3204 15.441 12.7138 15.0524L18.2477 9.58579H1C0.447715 9.58579 0 9.13807 0 8.58579C0 8.0335 0.447716 7.58579 1 7.58579H18.2477L12.7137 2.11913Z" fill="#002871"/>
+                </svg>
+              </button>
+            </div>
+          </div>
 
+          <div class="swiper-wrapper">
+            <article class="swiper-slide swiper-card">
+              <div class="slider-article__count">
+                <p class="slider-article__number">01/</p><span class="slider-article__total">03</span>
+              </div>
+              <h class="slider-article__title"><span class="slider-article__main-title">Гидроцилиндры </span>АТЛАНТ</h>
+              <p class="slider-article__text">Применяются во всех секторах промышленности входят в устройство каждой механической машины. Осуществляет работоспособность многих видов силового оборудования как промышленного, так и бытового.</p>
+              <div class="slider-article__buttons">
+                <a class="button slider-article__button" href="#">перейти в каталог</a>
+                <button class="button slider-article__save" href="#">
+                  <span>Cкачать каталог</span>
+                  <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </article >
+            <article class="swiper-slide swiper-card">
+              <div class="slider-article__count">
+                <p class="slider-article__number">02/</p><span class="slider-article__total">03</span>
+              </div>
+              <h class="slider-article__title"><span class="slider-article__main-title">Гидроцилиндры </span>АТЛАНТ</h>
+              <p class="slider-article__text">Применяются во всех секторах промышленности входят в устройство каждой механической машины. Осуществляет работоспособность многих видов силового оборудования как промышленного, так и бытового.</p>
+              <div class="slider-article__buttons">
+                <a class="button slider-article__button" href="#">перейти в каталог</a>
+                <button class="button slider-article__save" href="#">
+                  <span>Cкачать каталог</span>
+                  <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </article >
+            <article class="swiper-slide swiper-card">
+              <div class="slider-article__count">
+                <p class="slider-article__number">03/</p><span class="slider-article__total">03</span>
+              </div>
+              <h class="slider-article__title"><span class="slider-article__main-title">Гидроцилиндры </span>АТЛАНТ</h>
+              <p class="slider-article__text">Применяются во всех секторах промышленности входят в устройство каждой механической машины. Осуществляет работоспособность многих видов силового оборудования как промышленного, так и бытового.</p>
+              <div class="slider-article__buttons">
+                <a class="button slider-article__button" href="#">перейти в каталог</a>
+                <button class="button slider-article__save" href="#">
+                  <span>Cкачать каталог</span>
+                  <svg class="slider-article__save-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="slider-article__save-path" d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </article >
+          </div>
+
+        </div>
+        <div class="slider__img-mobile">
+          <div class="slider__hover-wrp"></div>
+          <div class="slider__button-plus">+</div>
+          <img class="slider__img active-img" src="../../images/slider-product2.jpg" alt="photo">
+          <img class="slider__img" src="https://topwar.ru/uploads/posts/2018-03/1521167711_gpn1470.jpg" alt="photo">
+          <img class="slider__img" src="https://knit-story.ru/upload/resize_cache/iblock/7dc/1500_1500_0/7dc5ecca6472e0f72dde7decf96abf1a.jpg" alt="photo">
+        </div>
+      </section>
+    </section>
 
 
 
