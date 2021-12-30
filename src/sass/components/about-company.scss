@@ -198,13 +198,17 @@
     background-position-x: 57%;
     background-position-y: -149px;
     background-size: cover;
+
     &__text{
       flex-direction: column;
       margin-top: 90px;
       margin-left: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
     &__line{
-      display: none;
+      margin-top: 25px;
     }
     &__title-block{
       margin-top: 0;
@@ -226,11 +230,18 @@
   }
 
 }
+
+
 @media (max-width: 780px) {
   .about-company{
     background-position-x: 34%;
     background-position-y: -126px;
     background-size: cover;
+  }
+}
+@media (max-width: 779px) {
+  .about-company__line{
+    display: none;
   }
 }
 @media (max-width: 750px) {

@@ -2,9 +2,6 @@ import Swiper, {Navigation, Pagination} from 'swiper';
 
 Swiper.use([Navigation, Pagination]);
 
-
-
-
 const sliders = document.querySelectorAll('.swiper');
 console.log(sliders)
 if (sliders.length !== 0){

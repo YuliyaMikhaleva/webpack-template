@@ -1,0 +1,252 @@
+.companies {
+  background-color: #F1F5F9;
+  padding-top: 25px;
+  &__text{
+    margin-top: 0;
+    max-width: 70%;
+  }
+  &__wrp{
+    background-image: url("../images/map2.svg");
+    background-size: auto;
+    background-position-x: 90%;
+    position: relative;
+    padding-top: 110px;
+
+  }
+  &__border{
+    margin:0 226px 155px 225px;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 52px;
+    color: #00318A;
+    line-height: 52px;
+    display: block;
+    margin: 0;
+  }
+  &__main-title{
+    font-weight: 300;
+    font-size: 116px;
+    color: $blueBG;
+    line-height: 136.88px;
+    display: block;
+  }
+  &__title-block{
+    margin: 0;
+  }
+  &__line{
+    width: 95px;
+    margin-top: 20px;
+  }
+  &__paragraph{
+    max-width: 743px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 46px;
+    z-index: 99999;
+  }
+  &__btn{
+    margin: 27px 0 78px 0;
+    width: 240px;
+    padding: 13px 25px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    &:hover .companies__svg-path{
+      fill: $blueBG;
+    }
+  }
+  &__svg{
+    margin-left: 14px;
+  }
+  &__logos{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-gap: 20px;
+    position: absolute;
+    top: 40%;
+    left: 93%;
+    width: 100%;
+    cursor: pointer;
+    transform: translate3d(-129.5px, 0px, 0px);
+    transition-duration: 0ms;
+    height: auto;
+  }
+  &__logo-item{
+    width: 160px;
+    height: 70px;
+  }
+  &__logo-img{
+    object-fit: contain;
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 1280px) {
+    .companies{
+      padding-top: 19px;
+      &__text{
+        max-width: 83%;
+      }
+      &__paragraph{
+        font-size: 21px;
+      }
+      &__border{
+        height: 730px;
+      }
+      &__logo-img{
+        width: 120%;
+      }
+    }
+}
+
+@media (max-width: 1266px) {
+  .companies{
+    padding-top: 57px;
+    &__title{
+      font-size: 26px;
+      line-height: 30.68px;
+    }
+    &__border{
+      margin-top: 48px;
+      margin-left: 42px;
+    }
+    &__text{
+      max-width: 100%;
+      margin-right: 0;
+      display: flex;
+      flex-direction: row;
+    }
+    &__wrp{
+      padding-top: 154px;
+    }
+    &__logos{
+      top: 43%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+    .companies__logos{
+      top: auto;
+    }
+  .companies__border{
+    margin-right: 0;
+  }
+  .companies__paragraph{
+    margin-left: 20px;
+  }
+  .companies__logos{
+    top: auto;
+  }
+  .companies__logo-img{
+    width: 140%;
+  }
+}
+
+@media (max-width: 880px) {
+  .companies{
+    &__title{
+      font-size: 26px;
+      line-height: 30.68px;
+    }
+    &__main-title{
+      font-size: 56px;
+      line-height: 66.08px;
+    }
+    &__paragraph{
+      max-width: 49%;
+      font-size: 18px;
+      line-height: 35.5px;
+      margin-left: 0;
+
+    }
+  }
+}
+
+
+@media (max-width:815px) {
+  .companies{
+    &__logos{
+      top: 47%;
+    }
+  }
+}
+
+@media (max-width:790px) {
+  .companies{
+    &__logos{
+      top: 40%;
+    }
+  }
+}
+
+@media (max-width:780px) {
+  .companies{
+    &__logo-img{
+      width: 160%;
+    }
+  }
+}
+
+
+@media (max-width: 779px) {
+  .companies{
+    padding-top: 0;
+    &__text{
+      justify-content: space-around;
+    }
+    &__logos{
+      top: 50%;
+    }
+    &__border{
+      margin-top: 80px;
+      margin-left: 20px;
+      height: 708px;
+    }
+
+  }
+}
+
+@media (max-width: 760px) {
+  .companies{
+    &__text{
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__title-block{
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width:750px) {
+  .companies__logos{
+    top: 70%;
+  }
+  .companies__wrp{
+    min-height: 787px;
+  }
+  .companies__paragraph{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .companies__logo-img{
+    width: 270%;
+  }
+}
+@media (max-width: 400px) {
+  .companies__logo-img{
+    width: 500%;
+  }
+}
+@media (max-width: 350px) {
+  .companies__logo-img{
+    width: 700%;
+  }
+}
